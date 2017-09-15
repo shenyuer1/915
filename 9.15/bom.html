@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bom.css">
+	<script src="bom.js"></script>
+</head>
+<style>
+	button{
+		width: 60px;
+		height: 30px;
+		background: #459932;
+		border: none;
+		outline: none;
+		font-size: 20px;
+		border-radius:5px;
+	}
+</style>
+<body>
+<h1><a href="../9.13/ja.html">bombom</a></h1>
+	<button id="forward">前进</button>
+	<button id="back">后退</button>
+	<button id="refresh">刷新</button>
+</body>
+<script>
+	let forward=document.getElementById('forward');
+	forward.onclick=function(){
+		history.forward();
+	}
+	let back=document.getElementById('back');
+	back.onclick=function(){
+		history.back();
+	}
+	
+</script>
+</html>
